@@ -160,4 +160,16 @@ public class CreditAccountTest {
 
         Assertions.assertEquals(0, account.yearChange());
     }
+    @Test
+    public void shouldRateWhenNullRate() { // рассчет процентов при нулевой ставке
+        CreditAccount account = new CreditAccount(
+                1000,
+                5_000,
+                0
+        );
+
+        account.yearChange();
+
+        Assertions.assertEquals(0, account.yearChange());
+    }
 }
