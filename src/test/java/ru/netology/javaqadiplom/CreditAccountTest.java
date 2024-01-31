@@ -30,6 +30,18 @@ public class CreditAccountTest {
 
         Assertions.assertEquals(2000, account.getBalance());
     }
+    @Test
+    public void shouldNotAddNOverLimitBalance() { // пополнение баланса сверх лимита
+        CreditAccount account = new CreditAccount(
+                1000,
+                5_000,
+                15
+        );
+
+        account.add(6_000);
+
+        Assertions.assertEquals(1000, account.getBalance());
+    }
 
     @Test
     public void shouldAddNullBalance() { // нулевое пополнение
