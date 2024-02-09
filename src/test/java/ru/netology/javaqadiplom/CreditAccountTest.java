@@ -30,6 +30,7 @@ public class CreditAccountTest {
 
         Assertions.assertEquals(2000, account.getBalance());
     }
+
     @Test
     public void shouldNotAddNOverLimitBalance() { // пополнение баланса сверх лимита
         CreditAccount account = new CreditAccount(
@@ -172,6 +173,7 @@ public class CreditAccountTest {
 
         Assertions.assertEquals(0, account.yearChange());
     }
+
     @Test
     public void shouldRateWhenNullRate() { // рассчет процентов при нулевой ставке
         CreditAccount account = new CreditAccount(
