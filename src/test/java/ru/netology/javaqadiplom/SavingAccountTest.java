@@ -7,7 +7,7 @@ public class SavingAccountTest {
 
     // Тесты для конструктора
     @Test
-    public void negativeRateConstructor() { // отрицательные значения на сберегательном счете
+    public void negativeRateConstructor() { // Отрицательные значения на сберегательном счете
         boolean wasException = false;
         try {
             SavingAccount account = new SavingAccount(
