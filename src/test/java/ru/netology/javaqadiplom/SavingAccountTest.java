@@ -23,7 +23,7 @@ public class SavingAccountTest {
     }
 
     @Test
-    public void negativeInitialBalance() { //счет с отрицательным стартовым балансом
+    public void negativeInitialBalance() { // счет с отрицательным стартовым балансом
         boolean wasException = false;
         try {
             SavingAccount account = new SavingAccount(
