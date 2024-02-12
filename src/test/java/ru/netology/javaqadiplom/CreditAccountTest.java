@@ -91,7 +91,7 @@ public class CreditAccountTest {
     }
 
     @Test
-    public void shouldIllegalArgumentExceptionWhenNegativeRate() { // покупка в пределах лимита при отрицательном балансе
+    public void shouldIllegalArgumentExceptionWhenNegativeRate() { // Покупка в пределах лимита при отрицательном балансе
         Assertions.assertThrows(IllegalArgumentException.class, () -> {
             new CreditAccount(1_000, 5_000, -15);
         });
