@@ -55,7 +55,7 @@ public class SavingAccountTest {
     }
 
     @Test
-    public void negativeMaxBalance() { //счет с отрицательным макксимальным балансом
+    public void negativeMaxBalance() { //счет с отрицательным максимальным балансом
         boolean wasException = false;
         try {
             SavingAccount account = new SavingAccount(
