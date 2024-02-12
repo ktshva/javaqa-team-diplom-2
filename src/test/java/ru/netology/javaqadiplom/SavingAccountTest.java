@@ -146,7 +146,6 @@ public class SavingAccountTest {
         Assertions.assertTrue(correctOperation);
         int endBalance = account.getBalance();
         Assertions.assertEquals(startBalance - 10_000, endBalance);
-
     }
 
     @Test
